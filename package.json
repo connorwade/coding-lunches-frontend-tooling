@@ -4,9 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postcss": "postcss ./style/style.css > ./style/style.post.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.14",
+    "level4": "^1.0.1",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0"
+  },
+  "type": "module"
 }

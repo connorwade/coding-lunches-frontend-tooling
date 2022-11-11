@@ -2,11 +2,16 @@
   "name": "modern-tooling-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/main.js",
+  "main": "public/main.bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.0",
+    "parcel": "^2.8.0"
+  }
 }

@@ -1,5 +1,6 @@
 import { getAllPokemon } from "./api/pokeAPI";
 import { injectPokemonCards } from "./components/pokemonCards";
+import "../style/style.scss";
 
 const closeModalBtn = document.querySelector(".close_modal");
 const modal = document.querySelector(".modal");

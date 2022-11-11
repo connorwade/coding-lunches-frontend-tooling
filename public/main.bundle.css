@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+p, label, span {
+  font-size: 1.6rem;
+}
+
+header {
+  height: 8vh;
+  background-color: gray;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  display: flex;
+}
+
+header .logo {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+header .logo .logo_img-cont img {
+  width: 3rem;
+}
+
+header .logo .logo_header {
+  font-size: 3rem;
+}
+
+.modal {
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background-color: #08646ee6;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal--open {
+  display: none;
+}
+
+.modal .black-box {
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(100% 41%, 19% 100%, 100% 100%);
+  z-index: 1;
+  background: linear-gradient(to bottom left, gray, #000);
+  position: absolute;
+  top: 0;
+}
+
+.modal_decoration {
+  height: 100%;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal_decoration .close_modal {
+  background-color: #0000;
+  border: none;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal_decoration .close_modal:hover {
+  cursor: pointer;
+}
+
+.modal_decoration .close_modal .material-icons {
+  color: #fff;
+  font-size: 3.6rem;
+}
+
+.modal_content {
+  min-width: 280px;
+  max-width: 400px;
+  z-index: 3;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.modal_content .circle {
+  min-width: 48rem;
+  min-height: 48rem;
+  z-index: -1;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  left: 38%;
+}
+
+.modal_content .column {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.modal_content .column img {
+  min-width: 28rem;
+}
+
+.modal_content .column .name-and-number p {
+  color: #fff;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+main {
+  background-color: #ff4500;
+  flex-flow: wrap;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+  display: flex;
+}
+
+.pokemon-card {
+  min-width: 28rem;
+  background: linear-gradient(to bottom right, #08a06d, #08646e);
+  border: 8px solid #fff;
+  border-radius: 10px;
+  margin: 3.2rem 1rem;
+  padding: 0 1.6rem;
+  transition: all .5s ease-in-out;
+}
+
+.pokemon-card .pokemon-card__cont {
+  text-decoration: none;
+}
+
+.pokemon-card .pokemon-card__cont .pokemon-card_content {
+  flex-direction: column;
+  align-items: center;
+  transition: flex 1s ease-in-out;
+  display: flex;
+}
+
+.pokemon-card .pokemon-card__cont .pokemon-card_content p {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2.2px;
+  color: #fff;
+  padding-bottom: 1.6rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.pokemon-card .pokemon-card__cont .pokemon-card_content img {
+  min-width: 28rem;
+}
+
+.pokemon-card:hover {
+  min-width: 400px;
+}
+
+.pokemon-card:hover img {
+  animation: 1s ease-in-out shake;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(1rem);
+  }
+
+  10% {
+    transorm: translateX(0rem);
+  }
+
+  20% {
+    transform: translateX(-1rem);
+  }
+
+  30% {
+    transorm: translateX(0rem);
+  }
+
+  40% {
+    transform: translateX(1rem);
+  }
+
+  50% {
+    transorm: translateX(0rem);
+  }
+
+  60% {
+    transform: translateX(-1rem);
+  }
+
+  70% {
+    transorm: translateX(0rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  90% {
+    transorm: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=main.bundle.css.map */

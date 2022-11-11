@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script type="module" src="./bundle.js"></script>
+    <title>PokeApp</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo_img-cont">
+          <img
+            src="https://static.thenounproject.com/png/80644-200.png"
+            alt="Pokedex Logo"
+          />
+        </div>
+        <h3 class="logo_header">Pokedex</h3>
+      </div>
+      <div class="search">
+        <label for="search">Search: </label>
+        <input type="text" name="search" id="search" />
+      </div>
+    </header>
+    <section class="modal">
+      <div class="modal_decoration">
+        <button class="close_modal">
+          <span class="material-icons">close</span>
+        </button>
+        <div class="modal_content">
+          <div class="circle"></div>
+          <div class="stats">
+            <p class="stats_title">STATS</p>
+            <hr />
+            <p class="stats_hp">HP: <span class="stats_hp-value">50</span></p>
+            <p class="stats_atk">
+              atk: <span class="stats_atk-value">50</span>
+            </p>
+            <p class="stats_def">
+              def: <span class="stats_def-value">50</span>
+            </p>
+            <p class="stats_spAtk">
+              spAtk: <span class="stats_spAtk-value">50</span>
+            </p>
+            <p class="stats_spDef">
+              spDef: <span class="stats_spDef-value">50</span>
+            </p>
+            <p class="stats_spd">
+              spd: <span class="stats_spd-value">50</span>
+            </p>
+            +
+          </div>
+          <div class="column">
+            <img
+              src="//raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+              alt="bulbasaur"
+            />
+            <div class="name-and-number">
+              <p class="name">BULBASAUR</p>
+              <hr />
+              <p class="number">001</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="black-box"></div>
+    </section>
+    <main id="app">
+      <div id="loadingBar">
+        <p>Loading ...</p>
+      </div>
+    </main>
+  </body>
+</html>
